@@ -1,14 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Header from 'Header';
+import Card from 'Card';
+import Footer from 'Footer';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <div>
+    <div>
+      <Header />
+    </div>
+    <div>
+      <Card />
+    </div>
+    <div>
+      <Footer />
+    </div>
+  </div>
+  ,document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

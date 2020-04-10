@@ -5,9 +5,84 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color:#393e46; */
+  background-image: url("assets/double-bubble.png");
+}
+
+a {
+  padding: 0px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+input {
+  width: 59px;
+  outline: none;
+}
+
+header {
+  background-color: #28094d;
+}
+
+footer{
+  height: 60px;
+}
+
+.ficonrow {
+  margin-top: 25px;
+}
+
+.ficon:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  color: rgb(250, 151, 242);
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.footertext {
+  color: white;
+  margin-top: 380px;
+  position: relative;
+  /* width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px; 
+  margin-left: -250px;  */
+}
+
+
+.logo {
+  height: 90px;
+  position: fixed;
+}
+
+.spin-button {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  outline: none;
+}
+
+.spin-button:active {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
