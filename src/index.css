@@ -38,7 +38,7 @@ footer{
 .ficon:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
-  color: rgb(250, 151, 242);
+  color: orange;
 }
 
 @keyframes shake {
